@@ -9,11 +9,9 @@ public class Class1 {
 	String str1;
 
 	static String str2;
-
 	Class1(String str1, String str2) {
 		this.str1 = str1; // this keyword represents current object
 		Class1.str2 = str2;
-
 //		int a1 = 100;
 
 //		a1 = a1;
