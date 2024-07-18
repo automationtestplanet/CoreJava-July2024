@@ -141,6 +141,7 @@ public class InterviewQuestionsOnFundamentals {
 		checkArmstrongNumber(153);
 		reverseEachWordWithutChangingPosition("Hello this is Java");
 		sumOnlyNumbersFromString("AKHda472562*($*$");
+		System.out.println("End of the program");
 	}
 	
 	
