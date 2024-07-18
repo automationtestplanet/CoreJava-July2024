@@ -24,8 +24,7 @@ public class InterviewQuestionsOnFundamentals {
 		for(int i = 1; i <= num; i++) {
 			if(num % i ==0)
 					count++;
-		}
-		
+		}		
 		if(count == 2)
 			System.out.println(num + " is prime number");
 		else
@@ -62,8 +61,7 @@ public class InterviewQuestionsOnFundamentals {
 	public static void checkStringPallendrome(String str) {
 		String revStr = "";		
 		for(char eachChar: str.toCharArray())
-			revStr = eachChar + revStr;
-		
+			revStr = eachChar + revStr;		
 		if(str.equals(revStr))
 			System.out.println(str+ " is a pallendrome");
 		else
@@ -75,7 +73,6 @@ public class InterviewQuestionsOnFundamentals {
 		for(char eachNum : String.valueOf(num).toCharArray()) {
 			revNum = eachNum + revNum;
 		}		
-		
 		if(Integer.parseInt(revNum) == num)
 			System.out.println(num+ " is a pallendrome");
 		else
@@ -90,8 +87,7 @@ public class InterviewQuestionsOnFundamentals {
 			int remainder = tempNum % 10;
 			sum = sum + (remainder * remainder * remainder);
 			tempNum = tempNum / 10;	
-		}	
-		
+		}		
 		if(sum == num)
 			System.out.println(num+ " is a Armstrong number");
 		else
@@ -100,8 +96,7 @@ public class InterviewQuestionsOnFundamentals {
 	
 	public static void reverseEachWordWithutChangingPosition(String str) {
 		// String str = "Hello this is Java"
-		// o/p: olleH siht si avaJ
-		
+		// o/p: olleH siht si avaJ		
 		String revStr = "";
 		for(String eahcWord: str.split(" ")) {
 			String eachWordRevStr = "";
@@ -117,13 +112,11 @@ public class InterviewQuestionsOnFundamentals {
 		// String str = "AKHda472562*($*$"
 		// sum = 4 + 7 + 2 + 5 + 6 + 2 = 26;  
 		// 52 + 55 + 50 + 53 + 54 + 50 = 314
-		// (52 - 48) + (55 - 48) + (50 - 48) + (53 - 48) + (54 - 48) + (50 - 48) = 26 
-		
+		// (52 - 48) + (55 - 48) + (50 - 48) + (53 - 48) + (54 - 48) + (50 - 48) = 26 		
 		int sum = 0;
 		for(char eachNum : str.replaceAll("[^0-9]", "").toCharArray()) {
 			sum +=  (eachNum-'0');
-		}
-		
+		}		
 		System.out.println(sum);
 	}
 
@@ -143,7 +136,4 @@ public class InterviewQuestionsOnFundamentals {
 		sumOnlyNumbersFromString("AKHda472562*($*$");
 		System.out.println("End of the program");
 	}
-	
-	
-
 }
