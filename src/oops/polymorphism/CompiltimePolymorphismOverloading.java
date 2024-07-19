@@ -36,7 +36,7 @@ public class CompiltimePolymorphismOverloading {
 	public void addition(int ...a) {
 		int sum = 0;
 		for(int eachVal : a)
-			sum+=eachVal;
+			sum += eachVal;
 		System.out.println(sum);
 	}
 	
