@@ -51,12 +51,10 @@ public interface Calculator {
 
 	/**
 	 * Description:This method perform division operation on two numbers and return the result as integer 
-=======
 
 	/**
 	 * Description: This methods performs division operation on two numbers and returns the result as integer
 	 * @author RAJU CHELLE
->>>>>>> d69da295338423c4f92d0fc3247c2335ae9ad146
 	 * @param a
 	 * @param b
 	 * @return
