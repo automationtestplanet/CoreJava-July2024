@@ -10,6 +10,7 @@ public class AccessCalculator extends ImplementCalculator {
 		System.out.println(calc.multiplication(20, 10));
 		System.out.println(calc.division(10,3));
 		
+
 	}
 
 }

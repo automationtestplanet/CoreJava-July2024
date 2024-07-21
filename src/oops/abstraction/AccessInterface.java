@@ -1,15 +1,15 @@
 package oops.abstraction;
 
 public class AccessInterface implements FullAbstractionInterface {
-
 	@Override
 	public void addition(int a, int b) {
 		System.out.println(a+b);
 
+
 	}
 
 	@Override
-	public int susbstraction(int a, int b) {
+	public int substraction(int a, int b) {
 		return a-b;
 	}
 
@@ -17,8 +17,8 @@ public class AccessInterface implements FullAbstractionInterface {
 		FullAbstractionInterface fullabsinterface  = new AccessInterface();
 		fullabsinterface.addition(100,200);
 		
-		System.out.println(fullabsinterface.susbstraction(20, 10));
+		System.out.println(fullabsinterface.substraction(20, 10));
 
-	}
+	
 
-}
+}}

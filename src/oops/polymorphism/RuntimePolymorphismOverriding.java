@@ -2,6 +2,7 @@ package oops.polymorphism;
 
 public class RuntimePolymorphismOverriding extends Calculator {
 
+	@Override
 	public int addition(int a, int b) {
 		return super.addition(a,b)+5;
 	}
