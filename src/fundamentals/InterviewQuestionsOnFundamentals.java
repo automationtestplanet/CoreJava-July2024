@@ -120,6 +120,14 @@ public class InterviewQuestionsOnFundamentals {
 		}		
 		System.out.println(sum);
 	}
+	
+	public static void sumOfNumbersInArray(int[] intArr) {
+		// Print sum of numbers in a given array
+		int sum = 0;
+		for (int eachNum : intArr)
+			sum += eachNum;
+		System.out.println("Sum of Given array is: " + sum);
+	}
 
 	public static void main(String[] args) {
 		swapNumbers(100, 200);
@@ -136,5 +144,8 @@ public class InterviewQuestionsOnFundamentals {
 		reverseEachWordWithutChangingPosition("Hello this is Java");
 		sumOnlyNumbersFromString("AKHda472562*($*$");
 		System.out.println("End of the program");
+		int[] intArr = {1,2,3,4,5};
+		sumOfNumbersInArray(intArr);
+		
 	}
 }
