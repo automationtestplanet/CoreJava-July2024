@@ -60,6 +60,7 @@ public class InterviewQuestionsOnFundamentals {
 	
 	public static void checkStringPallendrome(String str) {
 		String revStr = "";		
+		
 		for(char eachChar: str.toCharArray())
 			revStr = eachChar + revStr;		
 		if(str.equals(revStr))
