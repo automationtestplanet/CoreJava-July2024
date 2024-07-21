@@ -145,7 +145,6 @@ public class InterviewQuestionsOnFundamentals {
 		sumOnlyNumbersFromString("AKHda472562*($*$");
 		System.out.println("End of the program");
 		int[] intArr = {1,2,3,4,5};
-		sumOfNumbersInArray(intArr);
-		
+		sumOfNumbersInArray(intArr);		
 	}
 }
