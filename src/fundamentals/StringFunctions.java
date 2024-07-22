@@ -45,10 +45,10 @@ public class StringFunctions {
 		String str2 = "asdfgfHODHFYQRROlkjhj82648*^$*^@*%";
 		System.out.println(str2.replaceAll("[^a-z]", ""));
 		System.out.println(str2.replaceAll("[^A-Z]", ""));
-		System.out.println(str2.replaceAll("[^0-9]", ""));
-		System.out.println(str2.replaceAll("[a-zA-Z0-9]", ""));
+		System.out.println(str2.replaceAll("[^0-9]", ""));		
 		System.out.println(str2.replaceAll("[^a-zA-Z]", ""));
 		System.out.println(str2.replaceAll("[^a-zA-Z0-9]", ""));
+		System.out.println(str2.replaceAll("[a-zA-Z0-9]", ""));
 		
 		
 		String string1 = "Hello";

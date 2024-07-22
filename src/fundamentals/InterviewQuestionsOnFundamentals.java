@@ -32,7 +32,7 @@ public class InterviewQuestionsOnFundamentals {
 	}
 	
 	public static void stringReverse(String str) {
-		System.out.println("Before Reverse: "+ str);		
+		System.out.println("Before Reverse: "+ str);	 // Hello   // olleH	
 		String revStr = "";		
 		for(char eachChar: str.toCharArray())
 			revStr = eachChar + revStr;
@@ -40,7 +40,7 @@ public class InterviewQuestionsOnFundamentals {
 	}
 	
 	public static void numberReverse(int num) {
-		int tempNum = num;
+		int tempNum = num;  // 143
 		int revNum = 0;
 		while(tempNum > 0) {			
 			int remainder = tempNum % 10; // 3 4 1
@@ -51,9 +51,9 @@ public class InterviewQuestionsOnFundamentals {
 	}
 	
 	public static void numberReverse2(int num) {
-		String revNum = "";
+		String revNum = ""; // 143
 		for(char eachNum : String.valueOf(num).toCharArray()) {
-			revNum = eachNum + revNum;
+			revNum = eachNum + revNum;  // 341
 		}		
 		System.out.println(Integer.parseInt(revNum));
 	}
@@ -86,7 +86,7 @@ public class InterviewQuestionsOnFundamentals {
 		int tempNum = num;
 		while(tempNum > 0) {			
 			int remainder = tempNum % 10;
-			sum = sum + (remainder * remainder * remainder);
+			sum = sum + (remainder * remainder * remainder); // 27  152 153
 			tempNum = tempNum / 10;	
 		}		
 		if(sum == num)
@@ -128,6 +128,33 @@ public class InterviewQuestionsOnFundamentals {
 			sum += eachNum;
 		System.out.println("Sum of Given array is: " + sum);
 	}
+	
+	public static void findLargeInArray(int[] intArr) {
+		// Print sum of numbers in a given array
+		int bigNumber = 0;
+		for (int eachNum : intArr) {
+			if(eachNum > bigNumber)
+				bigNumber = eachNum;
+		}
+		System.out.println("Largest number from Array is: " + bigNumber);
+	}
+	
+	public static void findLargePrimeNumberInArray(int[] intArr) {
+		// Print sum of numbers in a given array
+		int bigNumber = 0;
+		for (int eachNum : intArr) {			
+			int count  = 0;
+			for(int i = 1; i <= eachNum; i++) {
+				if(eachNum % i ==0)
+						count++;
+			}			
+			if(count == 2) {
+				if(eachNum > bigNumber)
+					bigNumber = eachNum;
+			}
+		}
+		System.out.println("Largest Prime number from Array is: " + bigNumber);
+	}
 
 	public static void main(String[] args) {
 		swapNumbers(100, 200);
@@ -146,5 +173,8 @@ public class InterviewQuestionsOnFundamentals {
 		System.out.println("End of the program");
 		int[] intArr = {1,2,3,4,5};
 		sumOfNumbersInArray(intArr);		
+		int[] intArr2 = {1,7,21,10,17,33,11,27,5,2};
+		findLargeInArray(intArr2);
+		findLargePrimeNumberInArray(intArr2);
 	}
 }
