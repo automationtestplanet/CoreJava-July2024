@@ -1,6 +1,23 @@
 package exceptions;
 
 public class FinallyBlockExample {
+	
+	static String methodTest() {
+		try {			
+			System.out.println("Method to Test FInaly block");			
+			System.out.println("Exception Occured");				
+			String str = "JAVA";
+			System.out.println(str.toUpperCase()); // error	
+			return "Hello";
+		
+		}catch(Exception e) {
+			System.out.println(e.getMessage());
+			return null;
+			
+		}finally {
+			System.out.println("Finally BLock Excuted");
+		}
+	}
 
 	public static void main(String[] args) {
 		
@@ -75,10 +92,14 @@ public class FinallyBlockExample {
 			System.out.println(str.toUpperCase()); // error	
 		
 		}catch(Exception e) {
-			System.out.println(e.getMessage());			
+			System.out.println(e.getMessage());
+			
 		}finally {
 			System.out.println("Close Database");
 		}
+		
+		System.out.println("-----------------------------------------");
+		System.out.println(methodTest());
 
 	}
 
