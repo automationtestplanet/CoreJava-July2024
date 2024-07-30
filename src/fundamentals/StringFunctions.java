@@ -62,7 +62,16 @@ public class StringFunctions {
 		System.out.println(string1.equals(string2));
 		System.out.println(string1.equals(string3));
 		System.out.println(string1.equalsIgnoreCase(string3));		
-		System.out.println(string1.concat("World"));		
+		System.out.println(string1.concat("World"));	
+		
+		
+		// String is immutable -> Value we can not change
+		
+		
+		
+		
+		
+		
 		
 	}
 
