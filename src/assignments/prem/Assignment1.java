@@ -1,9 +1,10 @@
 // write reusable program to revere a string without changing special characters position
 	// ex: String str = "he@l#&l%o"  -> o@l#&le%h
 package assignments.prem;
-public class Assignment_one {
-	public static void main(String[] args) {
-	public static String reverseStringSpecialChar((String str) {
+public class Assignment1 {
+	
+	
+	public static String reverseStringSpecialChar(String str) {
         char[] chars = str.toCharArray();
         int left = 0, right = chars.length - 1;
         while (left < right) {
@@ -21,11 +22,11 @@ public class Assignment_one {
         }
         return new String(chars);
     }
+	
     public static void main(String[] args) {
         String input = "he@l#&l%o";
         String result = reverseStringSpecialChar(input);
         System.out.println(result); 
     }
-}
 
 }
